@@ -9,11 +9,11 @@
         }
 </style>
 <div class="text-center">
-    <h1>Projets Personnalisés Encadrés</h1>
+    <h1>Module SI6</h1>
 </div>
 <div class="container">
     <div class="accordion" id="accordionExample">
-        @foreach (App\Categorie::select('id')->where('nom','=','PPE')->get() as $item)
+        @foreach (App\Categorie::select('id')->where('nom','=','SI6')->get() as $item)
             <div class="invisible">{{$test =$item->id}}</div>
         @endforeach
         @foreach (App\Article::where('categorie',$test)->get() as $item)

@@ -18,7 +18,7 @@
         @endforeach
         @foreach (App\Article::where('categorie',$test)->get() as $item)
             @guest
-            <div class="card text-white bg-dark mb-3">
+            <div class="card">
                 <div class="card-header text-center" id="headingOne">
                     <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#{{$item->id}}" aria-expanded="true" aria-controls="{{$item->id}}">
                         <h5 class="card-title">{!!$item->nom!!}</h5>
@@ -33,7 +33,7 @@
             @else {{-- modification des contenu des post ou créer une autre page pour gérer tout les articles à voir --}}
             <form action="modif">
                     @csrf
-                <div class="card text-white bg-dark mb-3"><input type="hidden" name="id" value="{!!$item->id!!}">
+                <div class="card"><input type="hidden" name="id" value="{!!$item->id!!}">
                     <div class="card-header text-center" id="headingOne">
                         <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#{{$item->id}}" aria-expanded="true" aria-controls="{{$item->id}}">
                             <h5 class="card-title">{!!$item->nom!!}</h5>

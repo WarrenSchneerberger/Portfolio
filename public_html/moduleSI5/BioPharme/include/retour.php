@@ -1,0 +1,1 @@
+<a href="./forum.php<?php echo('?id='.$_SESSION['id'])?>">retour</a>

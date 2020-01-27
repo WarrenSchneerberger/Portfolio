@@ -15,20 +15,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/PPE', function () {
-    return view('projet/ppe');
+Route::get('/PHP', function () {
+    return view('projet/php');
 });
 
-Route::get('/SI5', function () {
-    return view('projet/si5');
+Route::get('/JAVA', function () {
+    return view('projet/java');
 });
 
-Route::get('/SI6', function () {
-    return view('projet/si6');
-});
-
-Route::get('/SLAM2', function () {
-    return view('projet/slam2');
+Route::get('/BDD', function () {
+    return view('projet/bdd');
 });
 
 Route::get('/Stage-1er', function () {
@@ -39,16 +35,18 @@ Route::middleware('auth')->group(function () {
     Route::get('/ajoutArticle', function () {
         return view('ajout/article');
     });
-
+    Route::get('/ajoutCategorie', function () {
+        return view('ajout/categorie');
+    });
     Route::get('/modif', function () {
         return view('modif/modif');
     });
 });
 
-Route::post('issert', 'ArticleController@issert')->name('issertArticle');
+Route::post('issertA', 'ArticleController@issert')->name('issertArticle');
 Route::post('update', 'ArticleController@update')->name('updateArticle');
 Route::post('supp', 'ArticleController@supp')->name('suppArticle');
-
+Route::post('issertC', 'CategorieController@issert')->name('issertCategorie');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

@@ -1,0 +1,30 @@
+body {
+    font-family: Moon, Helvetica, sans-serif;
+}
+/*header {
+    background: url('../img/homeeglise.jpg') no-repeat center fixed; 
+    background-size: cover;
+    padding: 220px;
+    text-align: center;
+    font-size: 35px; 
+}
+height: 300px;
+*/
+/*test de fond*/
+.diaporama{
+    background-image:center;
+    background-size: cover;
+    border: 3px solid #333;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: #45a1ff;
+    color: #fff;
+    text-align: center;
+}
+header {
+    text-align:center;
+}

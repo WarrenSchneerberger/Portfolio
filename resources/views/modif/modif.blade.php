@@ -24,9 +24,6 @@
             </div>
             <input class="btn btn-primary" type="submit" name="envoyer" value="envoyer" formaction="{{route('updateArticle')}}" formmethod="post" />
         </form>
-        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-        <script src="//cdn.ckeditor.com/4.5.11/standard/ckeditor.js"></script>
-        <script>CKEDITOR.replace( 'text_article' );</script>
     @endforeach
 </div>
 @endsection

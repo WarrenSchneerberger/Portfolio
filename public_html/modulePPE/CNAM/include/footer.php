@@ -1,0 +1,1 @@
+<footer><h5 >Copyright © 2019 Warren Schneerberger - Jordan Goblet - Tristan Olek - Lucas Coville - Maxime Lesbats</br> Contact : cnam2019-aviation@btsio.net</h5></footer>

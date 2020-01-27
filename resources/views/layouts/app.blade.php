@@ -34,17 +34,18 @@
                       </a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <h6 class="dropdown-header">Projet en classe</h6>
-                        <a class="dropdown-item" href="PPE">PPE</a>
-                        <a class="dropdown-item" href="SI5">Module SI5</a>
-                        <a class="dropdown-item" href="SI6">Module SI6</a>
-                        <a class="dropdown-item" href="SLAM2">SLAM2</a>
+                        <a class="dropdown-item" href="PHP">PHP<a>
+                        <a class="dropdown-item" href="JAVA">JAVA</a>
+                        <a class="dropdown-item" href="BDD">Base de donnee</a>
                         <div class="dropdown-divider"></div>
                         <h6 class="dropdown-header">Projet en stage</h6>
                         <a class="dropdown-item" href="Stage-1er">1er année</a>
                         <div class="dropdown-divider"></div>
                         <h6 class="dropdown-header">Projet en perso</h6>
-                        {{--<a class="dropdown-item" href="#">Something else here</a>--}}
                       </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Vielle technologie <span class="sr-only">(current)</span></a>
                     </li>
                   </ul>
                   <ul class="navbar-nav ml-auto">
@@ -73,7 +74,7 @@
                                     </a>
                                     <h6 class="dropdown-header">Ajout</h6>
                                     <a class="dropdown-item" href="ajoutArticle">Ajout d'article</a>
-                                    <a class="dropdown-item" href="#">Ajout de catégorie</a>
+                                    <a class="dropdown-item" href="ajoutCategorie">Ajout de catégorie</a>
                                     {{-- ajouter les pages uniquement pour l'utilisateur ici si besoin --}}
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf

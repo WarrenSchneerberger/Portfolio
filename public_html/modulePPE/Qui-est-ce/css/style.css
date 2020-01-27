@@ -1,0 +1,44 @@
+#main, #bas {
+    padding: 1px 0;
+}
+#main {
+    margin: auto;
+}
+#bas {
+    background-color: white;
+    text-align: center;
+}
+h1 {
+    font-family: Helvetica Light;
+    text-align: center;
+    font-size: 3em;
+}
+.flotte {
+    float: left;
+}
+h2 {
+    font-size: 1.2em;
+}
+.ment {
+    font-size: 1.2em;
+    color: red;
+    background-color: transparent;
+
+}
+p {
+    margin: 10px;
+    padding: 20px;
+    background-color: transparent;
+    font-size: 1.5em;
+
+}
+.normal{
+    border: 3px solid black;
+}
+.suspect {
+    border: 5px solid red;
+}
+
+.question {
+    font-size: 1.2em;
+}

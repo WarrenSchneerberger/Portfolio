@@ -1,0 +1,77 @@
+<HTML>
+<HEAD>
+ <meta charset="UTF-8">
+<TITLE>Qui est-ce ?</TITLE>
+ <link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet" href="css/bootstrap.css">
+ <script src="js/bootstrap.js"></script>
+<h1>Qui est-ce ?</h1>
+</HEAD>
+
+<BODY>
+<div id="main">
+<p class="flotte">
+<table id="tableau">
+    <tbody>
+        <tr>
+            <td id="8" class="normal" style="width: 141px; height: 248px; background-image: url(jpg/8.jpg);"></td>
+            <td id="4" class="normal" style="width: 141px; height: 248px; background-image: url(jpg/4.jpg);"></td>
+            <td id="7" class="normal" style="width: 141px; height: 248px; background-image: url(jpg/7.jpg);"></td>
+            <td id="9" class="normal" style="width: 141px; height: 248px; background-image: url(jpg/9.jpg);"></td>
+            <td id="1" class="normal" style="width: 141px; height: 248px; background-image: url(jpg/1.jpg);"></td>
+        </tr>
+        <tr>
+            <td id="11" class="normal" style="width: 141px; height: 248px; background-image: url(jpg/11.jpg);"></td>
+            <td id="5" class="normal" style="width: 141px; height: 248px; background-image: url(jpg/5.jpg);"></td>
+            <td id="13" class="normal" style="width: 141px; height: 248px; background-image: url(jpg/13.jpg);"></td>
+            <td id="15" class="normal" style="width: 141px; height: 248px; background-image: url(jpg/15.jpg);"></td>
+            <td id="2" class="normal" style="width: 141px; height: 248px; background-image: url(jpg/2.jpg);"></td>
+            <td id="6" class="normal" style="width: 141px; height: 248px; background-image: url(jpg/6.jpg);"></td>
+        </tr>
+        <tr>
+            <td id="10" class="normal" style="width: 141px; height: 248px; background-image: url(jpg/10.jpg);"></td>
+            <td id="3" class="normal" style="width: 141px; height: 248px; background-image: url(jpg/3.jpg);"></td>
+            <td id="12" class="normal" style="width: 141px; height: 248px; background-image: url(jpg/12.jpg);"></td>
+            <td id="0" class="normal" style="width: 141px; height: 248px; background-image: url(jpg/0.jpg);"></td>
+            <td id="14" class="normal" style="width: 141px; height: 248px; background-image: url(jpg/14.jpg);"></td>
+        </tr>
+    </tbody>
+</table>
+</p>
+<br>
+
+<!-- Questions  -->
+<form action="./test.php" method="post">
+<h2 id="Q1">1. A-t-il des lunettes ?</h2>
+Oui<INPUT name="Q1" type="radio" value="1" onclick="oui(0)" required>
+Non<INPUT name="Q1" type="radio" value="0" onclick="non(0)" required><br><br>
+
+<h2 id="Q2">2. A-t-il une moustache ?</h2>
+Oui<INPUT name="Q2" type="radio" value="1" onclick="oui(1)" required>
+Non<INPUT name="Q2" type="radio" value="0" onclick="non(1)" required><br><br>
+
+<h2 id="Q3">3. A-t-il un chapeau ?</h2>
+Oui<INPUT name="Q3" type="radio" value="1" onclick="oui(2)" required>
+Non<INPUT name="Q3" type="radio" value="0" onclick="non(2)" required><br><br>
+
+<h2 id="Q4">4. A-t-il des cheveux ?</h2>
+Oui<INPUT name="Q4" type="radio" value="1" onclick="oui(3)" required>
+Non<INPUT name="Q4" type="radio" value="0" onclick="non(3)" required><br><br>
+
+<h2 id="Q5">5. A-t-il une boucle d'oreille ?</h2>
+Oui<INPUT name="Q5" type="radio" value="1" onclick="oui(4)" required>
+Non<INPUT name="Q5" type="radio" value="0" onclick="non(4)" required><br><br>
+
+<h2 id="Q6">6. A-t-il une barbe ?</h2>
+Oui<INPUT name="Q6" type="radio" value="1" onclick="oui(5)" required>
+Non<INPUT name="Q6" type="radio" value="0" onclick="non(5)" required><br><br>
+
+<h2 id="Q7">7. A-t-il un noeud papillon ?</h2>
+Oui<INPUT name="Q7" type="radio" value="1" onclick="oui(6)" required>
+Non<INPUT name="Q7" type="radio" value="0" onclick="non(6)" required><br><br>
+<INPUT id="bouton" type="submit" value="Cliquez pour avoir la réponse" onclick="affiche(m)">
+
+</form>
+</div>
+</BODY>
+</HTML>
